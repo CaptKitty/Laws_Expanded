@@ -52,8 +52,8 @@ country_decisions = {
 			}
 		}
 		allow = {
-			OR = { 
-				has_country_modifier = centralization_2
+			OR = {
+				has_country_modifier = centralizatized_2
 				NOT = {
 					check_variable = {
 						which = Noble_Militancy
