@@ -1,5 +1,3 @@
-#Castilian Civil War
-#A mix of the civil wars with outside intervention and noble families siding against the crown between 1419 and 1479.
 
 LE_centralization_war = {
 	potential = {
@@ -64,10 +62,15 @@ LE_centralization_war = {
 
 	
 	can_end = {
-		stability = 1
-		NOT = { num_of_rebel_controlled_provinces = 1 }
-		NOT = {
-			has_spawned_rebels = noble_rebels
+		OR = {
+			AND = {
+				stability = 1
+				NOT = { num_of_rebel_controlled_provinces = 1 }
+				NOT = {
+					has_spawned_rebels = noble_rebels
+				}
+			}
+			has_country_flag = LE_white_flag
 		}
 	}
 	

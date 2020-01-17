@@ -208,6 +208,7 @@ country_event = {
 				duration = 1
 			}
 		}
+		set_country_flag = LE_white_flag
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -229,8 +230,9 @@ country_event = {
 			limit = {
 				check_variable {
 					which = Noble_Militancy
-					value = 60
+					value = 65
 				}
+				NOT = { has_disaster = LE_centralization_war }
 			}
 			random_owned_province = {
 				spawn_rebels = {
@@ -245,6 +247,7 @@ country_event = {
 					which = Noble_Militancy
 					value = 75
 				}
+				NOT = { has_disaster = LE_centralization_war }
 			}
 			random_owned_province = {
 				spawn_rebels = {
@@ -256,7 +259,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 			modifier = {
-				factor = 0.1
+				factor = 0
 				has_disaster = LE_centralization_war
 			}
 		}
@@ -290,6 +293,7 @@ country_event = {
 				size = 2
 			}
 		}
+		clr_country_flag = LE_white_flag
 	}
 	
 	option = {
@@ -313,9 +317,12 @@ country_event = {
 		days = 1
 	}
 	
+	immediate = {
+		clr_country_flag = LE_white_flag
+	}
 	
 	option = {
-		name = laws_events.5.a 
+		name = laws_events.6.a 
 		add_stability = 1
 	}
 }
