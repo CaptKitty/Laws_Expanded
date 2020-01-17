@@ -1,0 +1,26 @@
+﻿l_english:
+ laws_events.1.t: "Welcome to Laws Expanded"
+ laws_events.1.d: "You just got conscripted to test scrub!"
+ laws_events.1.a: "Enjoy the T1 modifier!"
+ 
+ laws_events.2.t: "Test_Event"
+ laws_events.2.d: "You Shouldn't see this."
+ laws_events.2.a: "Why are you here?"
+ 
+ laws_events.3.t: "Angery Nobles"
+ laws_events.3.d: "You pissed off the nobles, enjoy them being angry."
+ laws_events.3.a: "Ill suck noble dick."
+ laws_events.3.b: "Fuck off Nobles."
+ 
+ laws_events.4.t: "Angery-er Nobles"
+ laws_events.4.d: "You pissed-er off the nobles, enjoy them being angry-er."
+ laws_events.4.a: "Ill suck noble dick."
+ laws_events.4.b: "Fuck off Nobles."
+ 
+ laws_events.5.t: "ITS A DISASTER"
+ laws_events.5.d: "yeah you should've seen this coming"
+ laws_events.5.a: "thanks a lot Jay."
+ 
+ laws_events.6.t: "Peace and happyness"
+ laws_events.6.d: "Ill never take away noble privileges again,"
+ laws_events.6.a: "i for one accept jay as our overlord."

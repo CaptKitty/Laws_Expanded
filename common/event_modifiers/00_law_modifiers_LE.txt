@@ -1,0 +1,12 @@
+centralizatized_0 = {
+	min_autonomy = 50
+}
+centralizatized_1 = {
+	min_autonomy = 30
+}
+centralizatized_2 = {
+	min_autonomy = 15
+}
+centralizatized_3 = {
+	administrative_efficiency = 0.10
+}
