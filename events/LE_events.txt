@@ -21,6 +21,15 @@ country_event = {
 		days = 1
 	}
 	
+	immediate = { 
+		hidden_effect = {
+			set_variable = {
+				which = Noble_Militancy
+				value = 0
+			}
+		}
+	}
+	
 	option = {
 		name = laws_events.1.a 
 		
