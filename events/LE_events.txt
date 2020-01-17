@@ -72,7 +72,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 10 #5475
+		days = 5475
 	}
 	
 	option = {
@@ -145,7 +145,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 10 #9125
+		days = 9125
 		modifier = {
 			factor = 0.75
 			check_variable {
