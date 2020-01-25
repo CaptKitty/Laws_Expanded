@@ -230,7 +230,7 @@ country_event = {
 			limit = {
 				check_variable {
 					which = Noble_Militancy
-					value = 65
+					value = 75
 				}
 				NOT = { has_disaster = LE_centralization_war }
 			}
@@ -245,7 +245,7 @@ country_event = {
 			limit = {
 				check_variable {
 					which = Noble_Militancy
-					value = 75
+					value = 100
 				}
 				NOT = { has_disaster = LE_centralization_war }
 			}
@@ -324,5 +324,9 @@ country_event = {
 	option = {
 		name = laws_events.6.a 
 		add_stability = 1
+		change_variable = {
+			which = Noble_Militancy
+			value = -25
+		}
 	}
 }

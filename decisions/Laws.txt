@@ -218,4 +218,158 @@ country_decisions = {
 		}
 		
 	}
+	
+
+	christian_language_0 = {
+		major = yes
+		potential = {
+			OR = {
+				has_country_modifier = christian_language_mixed
+			}
+		}
+		allow = {
+		}
+		effect = {
+			add_country_modifier = {
+				name = christian_language_catholic
+				duration = -1
+			}
+			if = { 
+				limit = {
+					has_country_modifier = christian_language_mixed
+				}
+				change_variable = {
+					which = Catholic_Militancy
+					value = -25
+				}
+			}
+			hidden_effect = {
+				remove_country_modifier = christian_language_mixed
+				remove_country_modifier = christian_language_heresy
+			}
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0.0
+				has_country_modifier = christian_language_mixed
+			}
+			modifier = {
+				factor = 0.0
+				check_variable = {
+					which = Catholic_Militancy
+					value = 20
+				}
+			}
+		}
+	}
+	christian_language_1 = {
+		major = yes
+		potential = {
+			OR = {
+				has_country_modifier = christian_language_catholic
+				has_country_modifier = christian_language_heresy
+			}
+		}
+		allow = {
+			OR = {
+				has_country_modifier = christian_language_heresy
+				NOT = {
+					check_variable = {
+						which = Catholic_Militancy
+						value = 40
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = christian_language_mixed
+				duration = -1
+			}
+			if = { 
+				limit = {
+					has_country_modifier = christian_language_heresy
+				}
+				change_variable = {
+					which = Catholic_Militancy
+					value = -25
+				}
+			}
+			if = { 
+				limit = {
+					has_country_modifier = christian_language_catholic
+				}
+				change_variable = {
+					which = Catholic_Militancy
+					value = 50
+				}
+			}
+			hidden_effect = {
+				remove_country_modifier = christian_language_catholic
+				remove_country_modifier = christian_language_heresy
+			}
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0.0
+				has_country_modifier = christian_language_heresy
+			}
+			modifier = {
+				factor = 0.0
+				check_variable = {
+					which = Catholic_Militancy
+					value = 20
+				}
+			}
+		}
+	}
+	christian_language_2 = {
+		major = yes
+		potential = {
+			OR = {
+				has_country_modifier = christian_language_mixed
+			}
+		}
+		allow = {
+			OR = { 
+				NOT = { 
+					check_variable = {
+						which = Catholic_Militancy
+						value = 40
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = christian_language_heresy
+				duration = -1
+			}
+			if = { 
+				limit = {
+					has_country_modifier = christian_language_mixed
+				}
+				change_variable = {
+					which = Catholic_Militancy
+					value = 50
+				}
+			}
+			hidden_effect = {
+				remove_country_modifier = christian_language_catholic
+				remove_country_modifier = christian_language_mixed
+			}
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0.0
+				check_variable = {
+					which = Catholic_Militancy
+					value = 20
+				}
+			}
+		}
+	}
 }

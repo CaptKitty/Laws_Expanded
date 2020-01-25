@@ -1,0 +1,302 @@
+namespace = laws_events_christian_language
+
+country_event = {
+	id = laws_events_christian_language.1
+	title = laws_events_christian_language.1.t
+	desc = laws_events_christian_language.1.d
+	picture = NOBLE_ESTATE_eventPicture
+	
+	trigger = {
+		NOT = { 
+			OR = { 
+				has_country_modifier = christian_language_catholic 
+				has_country_modifier = christian_language_mixed 
+				has_country_modifier = christian_language_heresy 
+			}
+		}
+	} 
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = { 
+		hidden_effect = {
+			set_variable = {
+				which = Catholic_Militancy
+				value = 0
+			}
+		}
+	}
+	
+	option = {
+		name = laws_events_christian_language.1.a 
+		
+		add_country_modifier = {
+			name = christian_language_catholic
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = laws_events_christian_language.2
+	title = laws_events_christian_language.2.t
+	desc = laws_events_christian_language.2.d
+	picture = NOBLE_ESTATE_eventPicture
+	hidden = yes
+	
+	trigger = {	always = yes }
+	
+	mean_time_to_happen = {
+		days = 365
+	}
+	
+	immediate = {
+		change_variable = {
+			which = Catholic_Militancy
+			value = -1
+		}
+	}
+	
+	option = {
+		name = laws_events_christian_language.2.a 
+		
+	}
+}
+
+country_event = {
+	id = laws_events_christian_language.3
+	title = laws_events_christian_language.3.t
+	desc = laws_events_christian_language.3.d
+	picture = NOBLE_ESTATE_eventPicture
+	
+	trigger = {	
+		OR = {
+			has_country_modifier = christian_language_mixed
+			has_country_modifier = christian_language_heresy
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 5475
+	}
+	
+	option = {
+		name = laws_events_christian_language.3.a 
+		if = {
+			limit = {
+				has_country_modifier = christian_language_mixed
+			}
+			change_variable = {
+				which = Catholic_Militancy
+				value = -25
+			}
+			remove_country_modifier = christian_language_mixed
+			add_country_modifier = {
+				name = christian_language_catholic
+				duration = 1
+			}
+		}
+		if = {
+			limit = {
+				has_country_modifier = christian_language_heresy
+			}
+			change_variable = {
+				which = Catholic_Militancy
+				value = -25
+			}
+			remove_country_modifier = christian_language_heresy
+			add_country_modifier = {
+				name = christian_language_mixed
+				duration = 1
+			}
+		}
+	}
+	
+	option = {
+		name = laws_events_christian_language.3.b 
+		change_variable = {
+			which = Catholic_Militancy
+			value = 10
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = laws_events_christian_language.4
+	title = laws_events_christian_language.4.t
+	desc = laws_events_christian_language.4.d
+	picture = NOBLE_ESTATE_eventPicture
+	
+	trigger = {	
+		check_variable = {
+			which = Catholic_Militancy
+			value = 50
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 9125
+		modifier = {
+			factor = 0.75
+			check_variable {
+				which = Catholic_Militancy
+				value = 75
+			}
+		}
+	}
+	
+	option = {
+		name = laws_events_christian_language.4.a 
+		if = {
+			limit = {
+				has_country_modifier = christian_language_mixed
+			}
+			set_variable = {
+				which = Catholic_Militancy
+				value = 25
+			}
+			remove_country_modifier = christian_language_mixed
+			add_country_modifier = {
+				name = christian_language_catholic
+				duration = 1
+			}
+		}
+		if = {
+			limit = {
+				has_country_modifier = christian_language_heresy
+			}
+			set_variable = {
+				which = Catholic_Militancy
+				value = 25
+			}
+			remove_country_modifier = christian_language_heresy
+			add_country_modifier = {
+				name = christian_language_mixed
+				duration = 1
+			}
+		}
+		set_country_flag = LE_white_flag_christian_language
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 10
+				has_disaster = LE_christian_language_war
+			}
+		}
+	}
+	
+	option = {
+		name = laws_events_christian_language.4.b 
+		random_owned_province = {
+			spawn_rebels = {
+				type = heretic_rebels 
+				size = 2
+			}
+		}
+		if = {
+			limit = {
+				check_variable {
+					which = Catholic_Militancy
+					value = 75
+				}
+				NOT = { has_disaster = LE_christian_language_war }
+			}
+			random_owned_province = {
+				spawn_rebels = {
+					type = heretic_rebels 
+					size = 2
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable {
+					which = Catholic_Militancy
+					value = 100
+				}
+				NOT = { has_disaster = LE_christian_language_war }
+			}
+			random_owned_province = {
+				spawn_rebels = {
+					type = heretic_rebels 
+					size = 3
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_disaster = LE_christian_language_war
+			}
+		}
+	}
+}
+
+country_event = {
+	id = laws_events_christian_language.5
+	title = laws_events_christian_language.5.t
+	desc = laws_events_christian_language.5.d
+	picture = NOBLE_ESTATE_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {	always = yes }
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		random_owned_province = {
+			spawn_rebels = {
+				type = heretic_rebels 
+				size = 2
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = heretic_rebels 
+				size = 2
+			}
+		}
+		clr_country_flag = LE_white_flag_christian_language
+	}
+	
+	option = {
+		name = laws_events_christian_language.5.a 
+		add_stability = -2
+
+	}
+}
+
+country_event = {
+	id = laws_events_christian_language.6
+	title = laws_events_christian_language.6.t
+	desc = laws_events_christian_language.6.d
+	picture = NOBLE_ESTATE_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {	always = yes }
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		clr_country_flag = LE_white_flag_christian_language
+	}
+	
+	option = {
+		name = laws_events_christian_language.6.a 
+		add_stability = 1
+		change_variable = {
+			which = Catholic_Militancy
+			value = -25
+		}
+	}
+}

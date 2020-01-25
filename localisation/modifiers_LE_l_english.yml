@@ -17,10 +17,36 @@
  laws_events.4.a: "Ill suck noble dick."
  laws_events.4.b: "Fuck off Nobles."
  
- laws_events.5.t: "ITS A DISASTER"
+ laws_events.5.t: "ITS A NOBLE DISASTER"
  laws_events.5.d: "yeah you should've seen this coming"
  laws_events.5.a: "thanks a lot Jay."
  
  laws_events.6.t: "Peace and happyness"
  laws_events.6.d: "Ill never take away noble privileges again,"
- laws_events.6.a: "i for one accept jay as our overlord."
+ laws_events.6.a: "i for one accept jay as our noble overlord."
+ 
+ laws_events_christian_language.1.t: "Welcome to Laws Expanded"
+ laws_events_christian_language.1.d: "You just got conscripted to test scrub!"
+ laws_events_christian_language.1.a: "Enjoy the Catholic Mass Language!"
+ 
+ laws_events_christian_language.2.t: "Test_Event"
+ laws_events_christian_language.2.d: "You Shouldn't see this."
+ laws_events_christian_language.2.a: "Why are you here?"
+ 
+ laws_events_christian_language.3.t: "Angery Catholics"
+ laws_events_christian_language.3.d: "You pissed off the Catholics, enjoy them being angry."
+ laws_events_christian_language.3.a: "Ill suck Catholic dick."
+ laws_events_christian_language.3.b: "Fuck off Catholics."
+ 
+ laws_events_christian_language.4.t: "Angery-er Catholics"
+ laws_events_christian_language.4.d: "You pissed-er off the catholics, enjoy them being angry-er."
+ laws_events_christian_language.4.a: "Ill suck Catholic dick."
+ laws_events_christian_language.4.b: "Fuck off Catholics."
+ 
+ laws_events_christian_language.5.t: "ITS A CHRISTIAN DISASTER"
+ laws_events_christian_language.5.d: "yeah you should've seen this coming"
+ laws_events_christian_language.5.a: "thanks a lot Jay."
+ 
+ laws_events_christian_language.6.t: "Peace and happyness"
+ laws_events_christian_language.6.d: "Ill never take away catholic privileges again,"
+ laws_events_christian_language.6.a: "i for one accept jay as our holy overlord."

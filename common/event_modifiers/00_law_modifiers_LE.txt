@@ -10,3 +10,14 @@ centralizatized_2 = {
 centralizatized_3 = {
 	administrative_efficiency = 0.10
 }
+christian_language_catholic = {
+	tolerance_own = 1
+	tolerance_heretic = -1
+}
+christian_language_mixed = {
+	missionary_maintenance_cost = -0.15
+}
+christian_language_heresy = {
+	tolerance_heretic = 1
+	missionaries = 1
+}

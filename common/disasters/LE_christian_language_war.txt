@@ -1,0 +1,93 @@
+
+LE_christian_language_war = {
+	potential = {
+		check_variable {
+			which = Catholic_Militancy
+			value = 50
+		}
+	}
+
+
+	can_start = {
+		check_variable {
+			which = Catholic_Militancy
+			value = 75
+		}
+	}
+	
+	
+	can_stop = {
+		NOT = {
+			check_variable {
+				which = Catholic_Militancy
+				value = 50
+			}
+		}
+	}
+	
+	progress = {
+		modifier = {
+			factor = 2
+			check_variable {
+				which = Catholic_Militancy
+				value = 75
+			}
+		}
+		modifier = {
+			factor = 3
+			check_variable {
+				which = Catholic_Militancy
+				value = 85
+			}
+		}
+		modifier = {
+			factor = 5
+			check_variable {
+				which = Catholic_Militancy
+				value = 100
+			}
+		}
+		modifier = {
+			factor = -1
+			stability = 3
+		}
+	}
+
+
+
+
+	
+	can_end = {
+		OR = {
+			AND = {
+				stability = 1
+				NOT = { num_of_rebel_controlled_provinces = 1 }
+				NOT = {
+					has_spawned_rebels = heretic_rebels 
+				}
+			}
+			has_country_flag = LE_christian_language_war
+		}
+	}
+	
+
+
+
+	modifier = {
+		global_unrest = 5
+	}	
+	
+	
+	on_start = laws_events_christian_language.5
+	on_end = laws_events_christian_language.6
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			11 = 0
+			1 = laws_events_christian_language.4
+		}
+	}
+}
+
