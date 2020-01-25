@@ -16,6 +16,7 @@ christian_language_catholic = {
 }
 christian_language_mixed = {
 	missionary_maintenance_cost = -0.15
+	yearly_corruption = -0.05
 }
 christian_language_heresy = {
 	tolerance_heretic = 1

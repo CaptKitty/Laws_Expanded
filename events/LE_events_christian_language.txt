@@ -120,6 +120,7 @@ country_event = {
 			which = Catholic_Militancy
 			value = 10
 		}
+		add_papal_influence = -10
 		ai_chance = { factor = 100 }
 	}
 }
