@@ -330,3 +330,67 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = laws_events.7
+	title = laws_events.7.t
+	desc = laws_events.7.d
+	picture = NOBLE_ESTATE_eventPicture
+	
+	trigger = {	
+		OR = {
+			has_country_modifier = centralizatized_0
+			has_country_modifier = centralizatized_1
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 5475
+	}
+	
+	option = {
+		name = laws_events.7.a 
+		add_yearly_manpower = 0.5
+		add_army_tradition = 5
+	}
+	
+}
+
+country_event = {
+	id = laws_events.8
+	title = laws_events.8.t
+	desc = laws_events.8.d
+	picture = NOBLE_ESTATE_eventPicture
+	
+	trigger = {	
+		OR = {
+			has_country_modifier = centralizatized_2
+			has_country_modifier = centralizatized_3
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 5475
+	}
+	
+	option = {
+		name = laws_events.8.a 
+		change_variable = {
+			which = Noble_Militancy
+			value = 5
+		}
+	}
+	
+	option = {
+		name = laws_events.8.b 
+		if = {
+			limit = {
+				absolutism = 10
+			}
+			add_absolutism = -10
+		}
+		else = {
+			add_legitimacy = -10
+		}
+	}
+}

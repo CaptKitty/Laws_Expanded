@@ -22,16 +22,17 @@
  laws_events.5.a: "thanks a lot Jay."
  
  laws_events.6.t: "Peace and happyness"
- laws_events.6.d: "Ill never take away noble privileges again,"
+ laws_events.6.d: "Ill never take away noble privileges again."
  laws_events.6.a: "i for one accept jay as our noble overlord."
  
- laws_events.7.t: "Proper Papist"
- laws_events.7.d: "We recieved a letter from the papacy how His Holyness is pleased by our monarchs efforts to enforce the holy orthodoxy. By securing the legal right to preach in latin we have secure the papal support for our prince."
- laws_events.7.a: "Our efforts are being recognized."
+ laws_events.7.t: "Noble Presentation"
+ laws_events.7.d: "As the Feudal Law dictates, a noble son has come with a retinue to swear fealty and join our court, bringing his military training and expertise with him."
+ laws_events.7.a: "I shall knight thee."
  
- laws_events.8.t: "Understanding of Faith"
- laws_events.8.d: "Through speaking our the language of the land, the popularity of mass has increased and the people are increasingly devout. One side effect of this is the increase in the amount of people getting an education at the monasteries and churches."
- laws_events.8.a: "The marriage of our culture and of our faith is beautifull."
+ laws_events.8.t: "Legal Exception"
+ laws_events.8.d: "A noble has been found to enforce some archaic laws that our royal laws should overrule, this abuse of the domain should be dealt with."
+ laws_events.8.a: "Reprimant him and make it clear he no longer has these privileges."
+ laws_events.8.b: "let it slide."
  
  laws_events_christian_language.1.t: "Welcome to Laws Expanded"
  laws_events_christian_language.1.d: "You just got conscripted to test scrub!"
@@ -58,3 +59,11 @@
  laws_events_christian_language.6.t: "Peace and happyness"
  laws_events_christian_language.6.d: "Ill never take away catholic privileges again,"
  laws_events_christian_language.6.a: "i for one accept jay as our holy overlord."
+ 
+ laws_events_christian_language.7.t: "Proper Papist"
+ laws_events_christian_language.7.d: "We recieved a letter from the papacy how His Holyness is pleased by our monarchs efforts to enforce the holy orthodoxy. By securing the legal right to preach in latin we have secure the papal support for our prince."
+ laws_events_christian_language.7.a: "Our efforts are being recognized."
+ 
+ laws_events_christian_language.8.t: "Understanding of Faith"
+ laws_events_christian_language.8.d: "Through speaking our the language of the land, the popularity of mass has increased and the people are increasingly devout. One side effect of this is the increase in the amount of people getting an education at the monasteries and churches."
+ laws_events_christian_language.8.a: "The marriage of our culture and of our faith is beautifull."
