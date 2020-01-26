@@ -5,10 +5,11 @@ centralizatized_1 = {
 	min_autonomy = 30
 }
 centralizatized_2 = {
-	min_autonomy = 15
+	min_autonomy = 10
 }
 centralizatized_3 = {
-	administrative_efficiency = 0.10
+	max_absolutism = 10
+	yearly_absolutism = 1
 }
 christian_language_catholic = {
 	tolerance_own = 1

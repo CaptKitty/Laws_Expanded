@@ -1,0 +1,17 @@
+﻿l_english:
+ centralization_0_title:1 "Feudal Centralization"
+ centralization_0_desc:1 "Let us affirm the rights of nobles to reign absolute on their own domains."
+ centralization_1_title:1 "Semi-Feudal Centralization"
+ centralization_1_desc:1 "Regardless of whos domain the nobility tread upon, the laws that bound the kingdom shall apply on the noble domains as well."
+ centralization_2_title:1 "Post-Feudal Centralization"
+ centralization_2_desc:1 "The law of the royal domain shall be enforced across the entire realm, triumping the of local laws."
+ centralization_3_title:1 "Absolute Centralization"
+ centralization_3_desc:1 "The laws of the royal domain affect everyone regardless of class or status, except for the king who stands above the law."
+ 
+ christian_language_0_title:1 "Latin Mass"
+ christian_language_0_desc:1 "Enforce the Papal Doctrine of Latin Mass."
+ christian_language_1_title:1 "Mixed Mass"
+ christian_language_1_desc:1 "Allow the congregation and the priest to determine their own mass language."
+ christian_language_2_title:1 "Local Mass"
+ christian_language_2_desc:1 "Force each priest to give Mass in the language of the land."
+ 

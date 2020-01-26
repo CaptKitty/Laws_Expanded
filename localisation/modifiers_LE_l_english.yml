@@ -1,60 +1,10 @@
 ﻿l_english:
- laws_events.1.t: "Welcome to Laws Expanded"
- laws_events.1.d: "You just got conscripted to test scrub!"
- laws_events.1.a: "Enjoy the T1 modifier!"
+ centralizatized_0: "Feudal Law"
+ centralizatized_1: "Semi-Feudal Law"
+ centralizatized_2: "Post-Feudal Law"
+ centralizatized_3: "Absolute Law"
+ christian_language_catholic: "Latin Mass Language"
+ christian_language_mixed: "Mixed Mass Language"
+ christian_language_heresy: "Local Mass Language"
  
- laws_events.2.t: "Test_Event"
- laws_events.2.d: "You Shouldn't see this."
- laws_events.2.a: "Why are you here?"
- 
- laws_events.3.t: "Angery Nobles"
- laws_events.3.d: "You pissed off the nobles, enjoy them being angry."
- laws_events.3.a: "Ill suck noble dick."
- laws_events.3.b: "Fuck off Nobles."
- 
- laws_events.4.t: "Angery-er Nobles"
- laws_events.4.d: "You pissed-er off the nobles, enjoy them being angry-er."
- laws_events.4.a: "Ill suck noble dick."
- laws_events.4.b: "Fuck off Nobles."
- 
- laws_events.5.t: "ITS A NOBLE DISASTER"
- laws_events.5.d: "yeah you should've seen this coming"
- laws_events.5.a: "thanks a lot Jay."
- 
- laws_events.6.t: "Peace and happyness"
- laws_events.6.d: "Ill never take away noble privileges again,"
- laws_events.6.a: "i for one accept jay as our noble overlord."
- 
- laws_events.7.t: "Proper Papist"
- laws_events.7.d: "We recieved a letter from the papacy how His Holyness is pleased by our monarchs efforts to enforce the holy orthodoxy. By securing the legal right to preach in latin we have secure the papal support for our prince."
- laws_events.7.a: "Our efforts are being recognized."
- 
- laws_events.8.t: "Understanding of Faith"
- laws_events.8.d: "Through speaking our the language of the land, the popularity of mass has increased and the people are increasingly devout. One side effect of this is the increase in the amount of people getting an education at the monasteries and churches."
- laws_events.8.a: "The marriage of our culture and of our faith is beautifull."
- 
- laws_events_christian_language.1.t: "Welcome to Laws Expanded"
- laws_events_christian_language.1.d: "You just got conscripted to test scrub!"
- laws_events_christian_language.1.a: "Enjoy the Catholic Mass Language!"
- 
- laws_events_christian_language.2.t: "Test_Event"
- laws_events_christian_language.2.d: "You Shouldn't see this."
- laws_events_christian_language.2.a: "Why are you here?"
- 
- laws_events_christian_language.3.t: "Angery Catholics"
- laws_events_christian_language.3.d: "A delegation of catholics has demanded we stop allowing the heretical practice of letting the lower classes hear the divine word of god directly. As it is the priests holy task to guide his flock by interpreting and guiding them."
- laws_events_christian_language.3.a: "Let the shepherd take responsibility."
- laws_events_christian_language.3.b: "Fuck off papists."
- 
- laws_events_christian_language.4.t: "Angery-er Catholics"
- laws_events_christian_language.4.d: "You pissed-er off the catholics, enjoy them being angry-er."
- laws_events_christian_language.4.a: "Ill suck Catholic dick."
- laws_events_christian_language.4.b: "Fuck off Catholics."
- 
- laws_events_christian_language.5.t: "ITS A CHRISTIAN DISASTER"
- laws_events_christian_language.5.d: "yeah you should've seen this coming"
- laws_events_christian_language.5.a: "thanks a lot Jay."
- 
- laws_events_christian_language.6.t: "Peace and happyness"
- laws_events_christian_language.6.d: "Ill never take away catholic privileges again,"
- laws_events_christian_language.6.a: "i for one accept jay as our holy overlord."
+ LE_Inspired_Population: "Inspired Population"
