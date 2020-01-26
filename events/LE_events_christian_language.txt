@@ -301,3 +301,62 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = laws_events_christian_language.7
+	title = laws_events_christian_language.7.t
+	desc = laws_events_christian_language.7.d
+	picture = NOBLE_ESTATE_eventPicture
+	
+	trigger = {	
+		OR = {
+			has_country_modifier = christian_language_catholic
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 5475
+	}
+	
+	
+	option = {
+		name = laws_events_christian_language.7.a
+		add_papal_influence = 10
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = laws_events_christian_language.8
+	title = laws_events_christian_language.8.t
+	desc = laws_events_christian_language.8.d
+	picture = NOBLE_ESTATE_eventPicture
+	
+	trigger = {	
+		OR = {
+			has_country_modifier = christian_language_heresy
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 5475
+	}
+	
+	
+	option = {
+		name = laws_events_christian_language.8.a
+		every_owned_province = {
+			limit = {
+				OR = {
+					has_building = temple
+					has_building = cathedral 
+				}
+			}
+			add_province_modifier = {
+				name = "LE_Inspired_Population"
+				duration = 3650
+			}
+		}
+		ai_chance = { factor = 100 }
+	}
+}

@@ -22,3 +22,16 @@ christian_language_heresy = {
 	tolerance_heretic = 1
 	missionaries = 1
 }
+
+
+
+
+
+
+
+
+LE_Inspired_Population = {
+	local_development_cost = -0.10
+	local_tax_modifier = 0.15
+	local_build_cost = -0.25
+}
